@@ -1,0 +1,27 @@
+{
+  "name": "ycblog",
+  "version": "1.0.0",
+  "description": "a blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waynecraig/ycblog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waynecraig/ycblog/issues"
+  },
+  "homepage": "https://github.com/waynecraig/ycblog#readme",
+  "dependencies": {
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-passport": "^4.0.1",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.8.1",
+    "passport-local": "^1.0.0"
+  }
+}
