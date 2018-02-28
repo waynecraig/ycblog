@@ -17,11 +17,11 @@ const router = require('./router')
 app.use(router.routes()).use(router.allowedMethods());
 
 app.use((ctx, next) => {
-    if (ctx.isAuthenticated()) {
-        return next()
-    } else {
-        ctx.redirect('/')
-    }
+  if (ctx.isAuthenticated()) {
+    return next()
+  } else {
+    ctx.redirect('/')
+  }
 })
 
 app.listen(3000)
