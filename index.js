@@ -13,8 +13,8 @@ const passport = require('koa-passport')
 app.use(passport.initialize())
 app.use(passport.session())
 
-const router = require('./router')
-app.use(router.routes()).use(router.allowedMethods());
+const authRouter = require('./authRouter')
+app.use(authRouter.routes()).use(authRouter.allowedMethods());
 
 app.use((ctx, next) => {
   if (ctx.isAuthenticated()) {
@@ -23,5 +23,8 @@ app.use((ctx, next) => {
     ctx.redirect('/')
   }
 })
+
+const adminRouter = require('./adminRouter')
+app.use(adminRouter.routes()).use(adminRouter.allowedMethods());
 
 app.listen(3000)
