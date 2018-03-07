@@ -23,6 +23,7 @@
     "koa-router": "^7.4.0",
     "koa-session": "^5.8.1",
     "mongodb": "^3.0.3",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "riot": "^3.9.0"
   }
 }

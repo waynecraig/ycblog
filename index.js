@@ -13,8 +13,8 @@ const passport = require('koa-passport')
 app.use(passport.initialize())
 app.use(passport.session())
 
-const authRouter = require('./authRouter')
-app.use(authRouter.routes()).use(authRouter.allowedMethods());
+const router = require('./router')
+app.use(router.routes()).use(router.allowedMethods());
 
 app.use((ctx, next) => {
   if (ctx.isAuthenticated()) {
